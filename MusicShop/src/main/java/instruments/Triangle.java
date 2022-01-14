@@ -8,4 +8,8 @@ public class Triangle extends Instrument {
         super(material, type, buyingPrice, sellingPrice);
         this.beater = beater;
     }
+
+    public int getBeater() {
+        return beater;
+    }
 }
