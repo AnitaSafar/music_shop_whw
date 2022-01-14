@@ -2,31 +2,31 @@ package instruments;
 
 public abstract class Instrument {
 
-    private String material;
-    private String type;
+    private Material material;
+    private Type type;
     private double buyingPrice;
     private double sellingPrice;
 
-    public Instrument(String material, String type, double buyingPrice, double sellingPrice) {
+    public Instrument(Material material, Type type, double buyingPrice, double sellingPrice) {
         this.material = material;
         this.type = type;
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
     }
 
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
-    public void setMaterial(String material) {
+    public void setMaterial(Material material) {
         this.material = material;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
