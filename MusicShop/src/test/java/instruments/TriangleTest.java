@@ -44,4 +44,9 @@ public class TriangleTest {
         assertEquals("Cling!", triangle.play());
     }
 
+    @Test
+    public void canCalculateMarkupPrice() {
+        assertEquals(6.40, triangle.calculateMarkup(), 0.0);
+    }
+
 }
