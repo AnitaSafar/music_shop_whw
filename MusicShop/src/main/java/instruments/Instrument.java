@@ -1,8 +1,9 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 
-public abstract class Instrument implements IPlay {
+public abstract class Instrument implements IPlay, ISell {
 
     private Material material;
     private Type type;
@@ -54,5 +55,7 @@ public abstract class Instrument implements IPlay {
         return "Noise";
     }
 
-
+    public double calculateMarkup() {
+        return sellingPrice - buyingPrice;
+    }
 }
