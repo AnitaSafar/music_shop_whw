@@ -11,12 +11,12 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar("Wood", "String", 5, 10.50, 6);
+        guitar = new Guitar(Material.WOOD, Type.STRING, 5, 10.50, 6);
     }
 
     @Test
     public void hasMaterial() {
-        assertEquals("Wood", guitar.getMaterial());
+        assertEquals(Material.WOOD, guitar.getMaterial());
     }
 
 }
