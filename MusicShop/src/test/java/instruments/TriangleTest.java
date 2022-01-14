@@ -23,4 +23,10 @@ public class TriangleTest {
     public void hasType() {
         assertEquals(Type.PERCUSSION, triangle.getType());
     }
+
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(6, triangle.getBuyingPrice(), 0.0);
+    }
+
 }
