@@ -18,4 +18,9 @@ public class PianoTest {
     public void hasMaterial() {
         assertEquals(Material.WOOD, piano.getMaterial());
     }
+
+    @Test
+    public void hasType() {
+        assertEquals(Type.KEYBOARD, piano.getType());
+    }
 }
