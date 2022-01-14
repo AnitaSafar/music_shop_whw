@@ -18,4 +18,9 @@ public class TriangleTest {
     public void hasMaterial() {
         assertEquals(Material.METAL, triangle.getMaterial());
     }
+
+    @Test
+    public void hasType() {
+        assertEquals(Type.PERCUSSION, triangle.getType());
+    }
 }
