@@ -39,4 +39,9 @@ public class TriangleTest {
         assertEquals(1, triangle.getBeater());
     }
 
+    @Test
+    public void canPlaySound() {
+        assertEquals("Cling!", triangle.play());
+    }
+
 }
