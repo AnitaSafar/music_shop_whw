@@ -24,4 +24,9 @@ public class GuitarTest {
         assertEquals(Type.STRING, guitar.getType());
     }
 
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(5, guitar.getBuyingPrice(), 0.0);
+    }
+
 }
