@@ -34,4 +34,9 @@ public class TriangleTest {
         assertEquals(12.40, triangle.getSellingPrice(), 0.0);
     }
 
+    @Test
+    public void hasBeater() {
+        assertEquals(1, triangle.getBeater());
+    }
+
 }
