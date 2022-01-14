@@ -10,4 +10,12 @@ public class Piano extends Instrument {
         this.keys = keys;
         this.pedals = pedals;
     }
+
+    public int getKeys() {
+        return keys;
+    }
+
+    public int getPedals() {
+        return pedals;
+    }
 }
