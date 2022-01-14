@@ -2,20 +2,20 @@ package instruments;
 
 import behaviours.IPlay;
 
-public abstract class Instrument {
+public abstract class Instrument implements IPlay {
 
     private Material material;
     private Type type;
     private double buyingPrice;
     private double sellingPrice;
-    private String sound;
 
-    public Instrument(Material material, Type type, double buyingPrice, double sellingPrice, String sound) {
+
+    public Instrument(Material material, Type type, double buyingPrice, double sellingPrice) {
         this.material = material;
         this.type = type;
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
-        this.sound = sound;
+
     }
 
     public Material getMaterial() {
@@ -50,11 +50,9 @@ public abstract class Instrument {
         this.sellingPrice = sellingPrice;
     }
 
-    public String getSound() {
-        return sound;
+    public String play() {
+        return "Noise";
     }
 
-    public void setSound(String sound) {
-        this.sound = sound;
-    }
+
 }

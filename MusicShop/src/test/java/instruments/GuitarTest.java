@@ -11,7 +11,7 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar(Material.WOOD, Type.STRING, 5, 10.50, "Strummm",  6);
+        guitar = new Guitar(Material.WOOD, Type.STRING, 5, 10.50,  6);
     }
 
     @Test
@@ -35,12 +35,12 @@ public class GuitarTest {
     }
 
     @Test
-    public void hasSound() {
-        assertEquals("Strummm", guitar.getSound());
+    public void hasStrings() {
+        assertEquals(6, guitar.getStrings());
     }
 
     @Test
-    public void hasStrings() {
-        assertEquals(6, guitar.getStrings());
+    public void canPlaySound() {
+        assertEquals("Strummm", guitar.play());
     }
 }
