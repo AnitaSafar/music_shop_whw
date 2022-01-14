@@ -23,4 +23,10 @@ public class PianoTest {
     public void hasType() {
         assertEquals(Type.KEYBOARD, piano.getType());
     }
+
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(199, piano.getBuyingPrice(), 0.0);
+    }
+
 }
