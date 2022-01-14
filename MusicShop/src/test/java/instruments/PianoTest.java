@@ -43,4 +43,9 @@ public class PianoTest {
     public void hasPedals() {
         assertEquals(3, piano.getPedals());
     }
+
+    @Test
+    public void canPlaySound() {
+        assertEquals("Plink!", piano.play());
+    }
 }

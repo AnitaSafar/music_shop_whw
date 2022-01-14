@@ -18,4 +18,8 @@ public class Piano extends Instrument {
     public int getPedals() {
         return pedals;
     }
+
+    public String play() {
+        return "Plink!";
+    }
 }
