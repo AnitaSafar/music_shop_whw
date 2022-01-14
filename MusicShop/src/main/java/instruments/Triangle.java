@@ -12,4 +12,8 @@ public class Triangle extends Instrument {
     public int getBeater() {
         return beater;
     }
+
+    public String play() {
+        return "Cling!";
+    }
 }
