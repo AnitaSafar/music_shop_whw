@@ -29,4 +29,9 @@ public class TriangleTest {
         assertEquals(6, triangle.getBuyingPrice(), 0.0);
     }
 
+    @Test
+    public void hasSellingPrice() {
+        assertEquals(12.40, triangle.getSellingPrice(), 0.0);
+    }
+
 }
