@@ -1,6 +1,9 @@
 package instruments;
 
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class GuitarTest {
 
@@ -9,6 +12,11 @@ public class GuitarTest {
     @Before
     public void before() {
         guitar = new Guitar("Wood", "String", 5, 10.50, 6);
+    }
+
+    @Test
+    public void hasMaterial() {
+        assertEquals("Wood", guitar.getMaterial());
     }
 
 }
