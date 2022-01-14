@@ -19,4 +19,9 @@ public class GuitarTest {
         assertEquals(Material.WOOD, guitar.getMaterial());
     }
 
+    @Test
+    public void hasType() {
+        assertEquals(Type.STRING, guitar.getType());
+    }
+
 }
