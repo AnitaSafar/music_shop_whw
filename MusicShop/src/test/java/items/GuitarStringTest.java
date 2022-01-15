@@ -19,4 +19,9 @@ public class GuitarStringTest {
         assertEquals("Yamaha", guitarString.getDescription());
     }
 
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(5, guitarString.getBuyingPrice(), 0.0);
+    }
+
 }
