@@ -1,6 +1,8 @@
 package items;
 
-public abstract class Item {
+import behaviours.ISell;
+
+public abstract class Item implements ISell {
 
     private String description;
     private double buyingPrice;
@@ -34,5 +36,9 @@ public abstract class Item {
 
     public void setSellingPrice(double sellingPrice) {
         this.sellingPrice = sellingPrice;
+    }
+
+    public double calculateMarkup() {
+        return sellingPrice - buyingPrice;
     }
 }
