@@ -23,4 +23,9 @@ public class ViolinBowTest {
     public void hasBuyingPrice() {
         assertEquals(7, violinBow.getBuyingPrice(), 0.0);
     }
+
+    @Test
+    public void hasSellingPrice() {
+        assertEquals(14.90, violinBow.getSellingPrice(), 0.0);
+    }
 }
