@@ -28,4 +28,9 @@ public class FlashCardsTest {
     public void hasSellingPrice() {
         assertEquals(6.99, flashCards.getSellingPrice(), 0.0);
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(3.99, flashCards.calculateMarkup(), 0.0);
+    }
 }
