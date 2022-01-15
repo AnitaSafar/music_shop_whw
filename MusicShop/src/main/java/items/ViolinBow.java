@@ -8,4 +8,8 @@ public class ViolinBow extends Item {
         super(description, buyingPrice, sellingPrice);
         this.size = size;
     }
+
+    public String getSize() {
+        return size;
+    }
 }
