@@ -18,4 +18,9 @@ public class ViolinBowTest {
     public void hasDescription() {
         assertEquals("Gear4music", violinBow.getDescription());
     }
+
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(7, violinBow.getBuyingPrice(), 0.0);
+    }
 }
