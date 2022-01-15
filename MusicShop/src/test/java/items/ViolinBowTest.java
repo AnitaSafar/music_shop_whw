@@ -33,4 +33,9 @@ public class ViolinBowTest {
     public void hasSize() {
         assertEquals("4/4", violinBow.getSize());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(7.90, violinBow.calculateMarkup(), 0.0);
+    }
 }
