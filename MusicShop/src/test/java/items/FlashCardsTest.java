@@ -18,4 +18,9 @@ public class FlashCardsTest {
     public void hasDescription() {
         assertEquals("Hal Leonard - Set A", flashCards.getDescription());
     }
+
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(3, flashCards.getBuyingPrice(), 0.0);
+    }
 }
